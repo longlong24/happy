@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.bgimg-1 {
+    background-image: url("./img/19.jpg");
+ 
+}
+
+.bgimg-2 {
+    background-image: url("./img/16.jpg");
+ 
+}
+
+.bgimg-3 {
+    background-image: url("./img/20.jpg");
+ 
+}
+
+.parallax,.parallax1  {
+    width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
+    position: relative;
+    z-index: 20;
+}
+
+.parallax1 {
+    min-height: 400px;
+}
+
+.parallax .caption {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+}
+
+.parallax1 .caption {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+}
+
+.parallax .caption span {
+    padding: 18px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+    background-color: #111;
+}
+.parallax1 .caption span {
+    padding: 18px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.main-content {
+    font-size: 16px;
+    background-color: #fff;
+    padding: 50px 80px;
+    text-align: justify;
+    color: #777;
+}
+
+.gallery-wrap {
+    border: solid 1px wheat;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+}
+
+.gallery-wrap .item {
+    height: 100%;
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: flex 0.8s ease;
+}
+.gallery-wrap .item:hover {
+    flex: 7;
+}
+.gallery-wrap .item-1 {
+    background-image: url(./img/1.jpg);
+}
+
+.gallery-wrap .item-2 {
+    background-image: url(./img/11.jpg);
+}
+.gallery-wrap .item-3 {
+    background-image: url(./img/7.jpg);
+}
+.gallery-wrap .item-4 {
+    background-image: url(./img/14.jpg);
+}
+.gallery-wrap .item-5 {
+    background-image: url(./img/18.jpg);
+}
+
+.main-content h3 {
+    color:wheat;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.main2-content {
+    color: #ddd;
+    background-color:#282E34;
+    text-align: justify;
+    padding: 50px 80px;
+}
+.main2-content p {
+    margin: 15px;
+}
+.heart {
+    position: fixed;
+    top: 50%;
+    right: 24px;
+    text-align: center;
+    z-index: 10;
+}
+.fa-heart {  
+    cursor: pointer;
+    font-size:32px;
+    color: red;
+    font-weight: 900;
+}
+
+.fa-heart:active {
+    font-size: 36px;
+    color:greenyellow;
+}
+#heartNumb {
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color:sandybrown;
+}
+
+.doremon {
+    background-color: white;
+}
+
+#svg {
+    display: none;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+}
+@media only screen and (max-width: 46.1875em) {
+    .heart {
+        top: 40%;
+    }
+    #svg {
+        left: -50px;
+    }
+}
+
